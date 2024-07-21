@@ -103,7 +103,3 @@ client.on("interactionCreate", async (inter) => {
 client.login(TOKEN);
 
 
-
-module.exports = (req, res) => {
-    res.status(200).send("Discord Bot is running!");
-};
