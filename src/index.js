@@ -1,6 +1,6 @@
 const postgres = require("postgres");
 require("dotenv").config();
-
+const keep_alive = require('./keep_alive.js')
 let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, ENDPOINT_ID, TOKEN } =
     process.env;
 
