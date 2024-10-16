@@ -2,7 +2,9 @@ const { Client, GatewayIntentBits, IntentsBitField } = require("discord.js");
 const postgres = require("postgres");
 require("dotenv").config();
 
+
 let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, ENDPOINT_ID, TOKEN } = process.env;
+
 
 const sql = postgres({
     host: PGHOST,
